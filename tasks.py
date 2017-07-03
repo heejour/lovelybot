@@ -9,7 +9,7 @@ def echo_response(message):
 def bit_response():
   ct = bit_contact()
   if message["type"] == "message":
-    if message["text"] == "bitcoin"
+    if message["text"] == "bitcoin":
       ReplyToActivity(fill=message,
                       text=ct).send()
     else:
