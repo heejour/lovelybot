@@ -6,7 +6,7 @@ def echo_response(message):
     ReplyToActivity(fill=message,
                     text=message["text"]).send()
 
-def bit_response():
+def bit_response(message):
   ct = bit_contact()
   if message["type"] == "message":
     if message["text"] == "bitcoin":
